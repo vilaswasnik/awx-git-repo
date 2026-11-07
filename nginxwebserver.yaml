@@ -3,7 +3,7 @@
   hosts: all  # Replace with your target group or host name
   tasks:
     - name: Install Nginx package
-      apt:
+        dnf:
         name: nginx
         state: present
         update_cache: yes
